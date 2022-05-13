@@ -65,7 +65,7 @@ export function Header() {
                 >
                     <Box mr='4' textAlign='right'>
                         <Text>Thiago Henrique</Text>
-                        <Text color='gray.300' fontSize='small'>Tiago@gmail.com</Text>
+                        <Text color='gray.300' fontSize='small'>TiagoH@gmail.com</Text>
                     </Box>
 
                     <Avatar size='md' name='Thiago Henrique'/>
