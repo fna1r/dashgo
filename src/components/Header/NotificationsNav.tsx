@@ -5,10 +5,10 @@ import { RiNotificationFill, RiUserAddLine } from "react-icons/ri";
 export function NotificationsNav() {
     return (
         <Stack
-            spacing='8'
+            spacing={['6','8']} // responsividade quando tiver no mobile o tamanho é 6 = 16px nos demais é 8 = 32px
             direction='row'
-            mx='8'
-            pr='8'
+            mx={['6','8']} // responsividade quando tiver no mobile o tamanho é 6 = 16px nos demais é 8 = 32px
+            pr={['6','8']} // responsividade quando tiver no mobile o tamanho é 6 = 16px nos demais é 8 = 32px
             py='1'
             color='gray.300'
             borderRightWidth='1px'
