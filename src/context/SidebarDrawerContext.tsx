@@ -15,7 +15,7 @@ export function SidebarDrawerProvaider({children}: SidebarDrawerProvaiderProps) 
   
     // para fechar o menu quando mudar de pagina
     useEffect(() => {
-        disclosure.onClose
+        disclosure.onClose()
     }, [router.asPath])
 
     return(

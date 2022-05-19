@@ -1,4 +1,5 @@
-import { Box, Button, Checkbox, Flex, Heading, Icon, Table, Tbody, Td, Text, Th, Thead, Tr, useBreakpoint, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Button, Checkbox, Flex, Heading, Icon, Table, Tbody, Td, Text, Th, Thead, Tr, useBreakpointValue } from "@chakra-ui/react";
+import Link from "next/link";
 import { RiAddLine, RiPencilLine } from "react-icons/ri";
 import { Header } from "../../components/Header";
 import { Pagination } from "../../components/Pagination";
@@ -6,12 +7,12 @@ import { Sidebar } from "../../components/Sidebar";
 
 
 export default function UserList() {
-    
+
     const isWideVersion = useBreakpointValue({
-        base:false,
+        base: false,
         lg: true,
     })
-    
+
     return (
         <Box>
             <Header />
@@ -22,13 +23,16 @@ export default function UserList() {
                     <Flex mb='8' justify='space-between' align='center'>
                         <Heading size='lg' fontWeight='normal' >Usuários</Heading>
 
-                        <Button as='a'
-                            size='sm'
-                            fontSize='sm'
-                            colorScheme='pink'
-                            leftIcon={<Icon as={RiAddLine} fontSize='20' />}
-                        >
-                            Criar novo usuário</Button>
+                        <Link href='/users/create' passHref>
+                            <Button as='a'
+                                size='sm'
+                                fontSize='sm'
+                                colorScheme='pink'
+                                leftIcon={<Icon as={RiAddLine} fontSize='20' />}
+                            >
+                                Criar novo usuário</Button>
+                        </Link>
+
                     </Flex>
 
                     <Table colorScheme='whiteAlpha'>
@@ -38,7 +42,7 @@ export default function UserList() {
                                     <Checkbox colorScheme='pink' />
                                 </Th>
                                 <Th>Usuário</Th>
-                                { isWideVersion && (<Th>Data de cadastro</Th>)}
+                                {isWideVersion && (<Th>Data de cadastro</Th>)}
                                 <Th w='8'></Th>
                             </Tr>
                         </Thead>
@@ -53,8 +57,8 @@ export default function UserList() {
                                         <Text fontSize='sm' color='gray.300'>thiagoHe@gmail.com</Text>
                                     </Box>
                                 </Td>
-                                { isWideVersion && (<Td>08 de janeiro, 2023</Td>)}
-                                { isWideVersion && (<Td>
+                                {isWideVersion && (<Td>08 de janeiro, 2023</Td>)}
+                                {isWideVersion && (<Td>
                                     <Button as='a'
                                         size='sm'
                                         fontSize='sm'
@@ -74,8 +78,8 @@ export default function UserList() {
                                         <Text fontSize='sm' color='gray.300'>Clara@gmail.com</Text>
                                     </Box>
                                 </Td>
-                                { isWideVersion && (<Td>08 de janeiro, 2023</Td>)}
-                                { isWideVersion && (<Td>
+                                {isWideVersion && (<Td>08 de janeiro, 2023</Td>)}
+                                {isWideVersion && (<Td>
                                     <Button as='a'
                                         size='sm'
                                         fontSize='sm'
@@ -95,8 +99,8 @@ export default function UserList() {
                                         <Text fontSize='sm' color='gray.300'>Marcelo@gmail.com</Text>
                                     </Box>
                                 </Td>
-                                { isWideVersion &&  (<Td>10 de janeiro, 2023</Td>)}
-                                { isWideVersion && (<Td>
+                                {isWideVersion && (<Td>10 de janeiro, 2023</Td>)}
+                                {isWideVersion && (<Td>
                                     <Button as='a'
                                         size='sm'
                                         fontSize='sm'
@@ -109,7 +113,7 @@ export default function UserList() {
                         </Tbody>
                     </Table>
                     <Pagination />
-                </Box>               
+                </Box>
             </Flex>
         </Box>
     );
