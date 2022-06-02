@@ -34,7 +34,7 @@ export function makeServer() {
         },
         
         routes() {
-            this.namespace = 'api'
+            this.namespace = 'dash-go.herokuapp.com'
             this.timing = 750
 
 
