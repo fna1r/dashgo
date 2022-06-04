@@ -2,5 +2,5 @@ import axios from "axios";
 
 
 export const api = axios.create({
-    baseURL: 'https://dash-go.herokuapp.com'
+    baseURL: 'https://dash-go.herokuapp.com/api'
 })
