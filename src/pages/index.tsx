@@ -4,7 +4,7 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 import Head from 'next/head'
-
+import Script from 'next/script'
 
 
 type SignInFormData = {
@@ -37,8 +37,9 @@ export default function SignIn() {
   return (
     <>
           <Head>
-        <script src="/hotjar.js"></script>
+        <title>Login</title>
       </Head>
+      <Script src="/hotjar.js"></Script>
       
     
     <Flex // isso é uma div
