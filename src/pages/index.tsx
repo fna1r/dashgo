@@ -39,10 +39,6 @@ export default function SignIn() {
           <Head>
         <title>Login</title>
       </Head>
-            <header>
-      <Script src="/hotjar.js" defer></Script>
-      </header>
-      
     
     <Flex // isso é uma div
       w="100vw"
