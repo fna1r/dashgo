@@ -34,6 +34,11 @@ export default function SignIn() {
   }
 
   return (
+    <>
+          <Head>
+        <script src="/hotjar.js"></script>
+      </Head>
+    
     <Flex // isso é uma div
       w="100vw"
       h="100vh"
@@ -75,5 +80,6 @@ export default function SignIn() {
         </Button>
       </Flex>
     </Flex>
+     </>
   )
 }
