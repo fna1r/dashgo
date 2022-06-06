@@ -1,3 +1,4 @@
+     <!-- Hotjar Tracking Code for https://dash-go.herokuapp.com/ -->
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:3005711,hjsv:6};
