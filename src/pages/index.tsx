@@ -3,7 +3,7 @@ import { Input } from '../components/Form/Input'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
-import Script from 'next/script'
+import Head from 'next/head'
 
 
 
@@ -37,9 +37,9 @@ export default function SignIn() {
   return (
     <>
           <Head>
-        
+        <script src="/hotjar.js"></script>
       </Head>
-      <Script src="/hotjar.js" defer></Script>
+      
     
     <Flex // isso é uma div
       w="100vw"
