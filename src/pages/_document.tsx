@@ -1,5 +1,5 @@
 import Document, { Html, Main, NextScript, Head } from "next/document";
-
+import Script from "next/script";
 
 export default class MyDocument extends Document {
     render() {
@@ -8,6 +8,7 @@ export default class MyDocument extends Document {
                 <Head>
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+                    <Script src="/hotjar.js"></Script>
                 </Head>
                 <body>
                     <Main />
