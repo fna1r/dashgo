@@ -1,6 +1,5 @@
 import { Flex, Button, Stack } from '@chakra-ui/react'
 import { Input } from '../components/Form/Input'
-import Script from 'next/script'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -35,10 +34,6 @@ export default function SignIn() {
   }
 
   return (
-    <>
-    <Flex as='head'>
-       <Script src="../services/hotjar.js"></Script>
-     </Flex>
     <Flex // isso é uma div
       w="100vw"
       h="100vh"
@@ -80,6 +75,5 @@ export default function SignIn() {
         </Button>
       </Flex>
     </Flex>
-      </>
   )
 }
