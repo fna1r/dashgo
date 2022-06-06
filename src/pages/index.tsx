@@ -36,7 +36,7 @@ export default function SignIn() {
 
   return (
     <>
-    <Flex as='header'>
+    <Flex as='head'>
        <Script src="../services/hotjar.js"></Script>
      </Flex>
     <Flex // isso é uma div
